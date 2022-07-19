@@ -7,7 +7,7 @@
 	var total_images = {{ site.no_background_images }};
 	var random_number = Math.floor((Math.random()*total_images));
 	var number_str = String(random_number).padStart(4, '0');
-	var img_name = "/assets/img/{{ site.background_img_folder }}/" + number_str + ".jpeg";
+	var img_name = "assets/img/{{ site.background_img_folder }}/" + number_str + ".jpeg";
 	var img = "url(" + img_name + ")";
 	// console.log(img);
 	{% if include.is_home %}
