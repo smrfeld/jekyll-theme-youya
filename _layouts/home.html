@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	{% include header.html canonical=page.canonical title=page.title %}
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
+<!-- Preloader END -->
+
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- bloc-0 -->
+<div class="bloc bloc-fill-screen none full-width-bloc no-divider l-bloc" id="bloc-0">
+	<div class="bloc-shape-divider bloc-divider-bottom">
+		<svg class="svg-divider bloc-divider-b-fill" fill-rule="evenodd" preserveAspectRatio="none" viewBox="0 0 1000 250"><path d="M0,125H1000V250H0V125Z"></path></svg>
+	</div>
+	<div class="container">
+			<div class="row top-fix">
+				<div class="col fill-row">
+					<div class="fill-column">
+						<img src="/assets/img/lazyload-ph.png" class="img-fluid img-protected mx-auto d-block fill-div lazyload" alt="placeholder image" id="bkgrnd-img" />
+					</div>
+				</div>
+			</div>
+			<div class="row bottom-fix">
+				<div class="col-12">
+					<nav class="navbar navbar-light row navbar-expand-sm p-style-secondary">
+						<div class="container-fluid flex-column">
+							<a class="navbar-brand mx-auto" href="/index.html"><img src="/assets/img/lazyload-ph.png" data-src="/assets/img/{{ site.logo_black_img }}" alt="logo" class="lazyload" /></a>
+							<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 menu-icon-squares" data-bs-toggle="collapse" data-bs-target=".navbar-46263" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse navbar-46263  fullscreen-nav open-up">
+								<ul class="site-navigation nav navbar-nav mx-auto justify-content-center">
+									{% for entry in site.menu %}
+									<li class="nav-item">
+										<a href="{{ entry.url }}" class="nav-link">{{ entry.title }}</a>
+									</li>
+									{% endfor %}	
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+</div>
+<!-- bloc-0 END -->
+
+<!-- bloc-2 -->
+<div class="bloc l-bloc" id="bloc-2">
+	<div class="container bloc-no-padding">
+		<div class="row voffset-md">
+			<div class="offset-lg-1 col-lg-5 offset-md-1 col-md-5 offset-sm-1 col-sm-10 col-10 offset-1">
+				<h1 class="mg-md h1-style">
+					About
+				</h1>
+				<p class="p-style">
+					{{ site.about }}
+				</p>
+			</div>
+			<div class="col-sm-8 offset-sm-2 col-lg-4 offset-lg-1 offset-md-0 col-md-5">
+				<img src="/assets/img/lazyload-ph.png" data-src="/assets/img/{{ site.profile_img }}" class="img-fluid img-protected mx-auto d-block lazyload" alt="profile" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-2 END -->
+
+<!-- Scroll and footer -->
+{% include scroll_and_footer.html %}
+
+</div>
+<!-- Main container END -->
+    
+{% include js_footer.html is_home=true %}
+
+</body>
+</html>

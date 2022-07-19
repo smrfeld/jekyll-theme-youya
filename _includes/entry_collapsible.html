@@ -1,0 +1,74 @@
+<!-- bloc-entry-collapsible-with-img -->
+<div class="bloc l-bloc" id="bloc-entry-collapsible-with-img">
+	<div class="container bloc-sm-sm bloc-sm bloc-sm-lg">
+		<div class="row">
+			{% if include.img %}
+			<div class="offset-lg-1 col-lg-6 offset-md-1 col-md-7">
+			{% else %}
+			<div class="offset-md-1 col-md-10 offset-lg-1 col-lg-10">
+			{% endif %}
+				<div id="accordion-{{ include.unique_id }}">
+					<div class="card border-0">
+						<div class="card-header bgc-white border-transparent" id="heading3">
+							<div class="row">
+                                {% if include.date %}
+                                <div class="col-lg-12 offset-lg-0 offset-md-0 col-md-12">
+									<p class="mg-clear text-lg-start p-style-tertiary text-start text-sm-start">
+                                        {{ include.date }}
+									</p>
+								</div>
+                                {% endif %}
+                                <div class="offset-lg-0 col-lg-12 offset-md-0 col-md-12">
+									<h5 class="mg-sm">
+										<strong>{{ include.title }}</strong>
+									</h5>
+									{% if include.subtitle %}
+									<p class="p-fixed-size p-style-secondary mg-clear">
+										{{ include.subtitle }}
+									</p>
+									{% endif %}
+									{% if include.tags %}
+									<div>
+										{% for tag in include.tags %}
+										<label class="label-link">
+											{{ tag }}
+										</label>
+										{% endfor %}
+									</div>
+									{% endif %}
+								</div>
+							</div>
+						</div>
+						<div id="accordion-{{ include.unique_id }}-item-3" class="collapse" aria-labelledby="heading3" data-bs-parent="#accordion-{{ include.unique_id }}">
+							<div class="card-body">
+								<div class="text-lg-start text-md-start text-sm-start text-start">
+									{% if include.github_url %}
+									<p class="p-style-secondary mg-clear p-with-icon">
+										<a href="{{ include.github_url }}"><span class="mg-md"></span><span class="fab fa-github icon-manatee icon-fixed float-lg-none icon-sm"></span>{{ include.github_label }}</a>
+									</p>
+									{% endif %}
+									{% if include.arxiv_url %}
+									<p class="p-style-secondary mg-clear p-with-icon">
+										<a href="{{ include.arxiv_url }}"><span class="mg-md"></span><span class="icon-manatee fa fa-file-pdf icon-fixed icon-sm"></span>{{ include.arxiv_label }}</a>
+									</p>
+									{% endif %}
+								</div>
+								{% if include.description %}
+								<p class="p-style-secondary">
+									{{ include.description }}
+								</p>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% if include.img %}
+			<div class="col-lg-4 col-md-3">
+				<img src="img/lazyload-ph.png" data-src="img/{{ include.img }}" class="img-fluid img-protected mx-auto d-block img-shifted-down lazyload" alt="img" />
+			</div>
+			{% endif %}
+		</div>
+	</div>
+</div>
+<!-- bloc-entry-collapsible-with-img END -->

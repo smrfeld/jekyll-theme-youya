@@ -1,0 +1,20 @@
+<div class="row">
+    {% for entry in include.books %}
+        {% capture label %}{{ entry.title | append: " by " | append: entry.author }}{% endcapture %}
+
+        {% capture irow %}{{ forloop.index0 | divided_by: 4 }}{% endcapture %}
+        {% capture icol_offset %}{{ irow | times: 4 }}{% endcapture %}
+        {% capture icol %}{{ forloop.index0 | minus: icol_offset }}{% endcapture %}
+
+        {% case icol %}
+        {% when "0" %}
+            {% include entry_book_col1.html label=label img=entry.img %}
+        {% when "1" %}
+            {% include entry_book_col2.html label=label img=entry.img %}
+        {% when "2" %}
+            {% include entry_book_col3.html label=label img=entry.img %}
+        {% else %}
+            {% include entry_book_col4.html label=label img=entry.img %}
+        {% endcase %}
+    {% endfor %}
+</div>

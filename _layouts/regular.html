@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	{% include header.html canonical=page.canonical title=page.title %}
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
+<!-- Preloader END -->
+
+<!-- Main container -->
+<div class="page-container">
+
+<!-- Banner -->
+{% if page.banner_small %}
+
+{% include banner_small.html %}
+
+{% elsif page.banner_medium %}
+
+{% include banner_medium.html %}
+
+{% elsif page.banner_large %}
+{% endif %}
+
+<!-- Menu bar -->
+{% include menu_bar.html %}
+
+<!-- Site menu bar -->
+{% if page.menu %}
+{% include site_menu_bar.html menu=page.menu %}
+{% endif %}
+
+<!-- Content -->
+{{ content }}
+
+<!-- Scroll and footer -->
+{% include scroll_and_footer.html %}
+
+</div>
+<!-- Main container END -->
+    
+{% include js_footer.html is_home=false %}
+
+</body>
+</html>

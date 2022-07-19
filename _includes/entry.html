@@ -1,0 +1,52 @@
+<!-- bloc-entry -->
+<div class="bloc l-bloc" id="bloc-entry">
+	<div class="container bloc-sm-sm bloc-sm bloc-sm-lg">
+		<div class="row">
+			<div class="offset-lg-1 col-lg-10 col-md-10 offset-md-1">
+				<p class="mg-clear text-lg-start p-style-tertiary text-start text-sm-start">
+					{{ include.date }}
+				</p>
+			</div>
+			<div class="offset-lg-1 col-lg-6 offset-md-1 col-md-6">
+				<h4 class="mg-sm">
+					<a href="{{ include.url }}"><strong>{{ include.title }}</strong></a>
+				</h4>
+				{% if include.description %}
+				<p class="p-fixed-size p-style-secondary">
+					{{ include.description }}
+				</p>
+				{% endif %}
+				<div class="row">
+					<div class="col-lg-8 col-sm-8 col-md-7">
+						<div>
+							{% if include.keywords %}
+							{% for keyword in include.keywords %}
+								<label class="label-link">
+									<a href="{{ keyword.url }}">keyword.title</a>
+								</label>
+							{% endfor %}
+							{% endif %}
+						</div>
+					</div>
+					<div class="col-lg-4 text-sm-start col-sm-4 col-md-5">
+						<div class="text-lg-end text-md-end text-sm-end text-end">
+							{% if include.medium_url %}
+							<a href="{{ include.medium_url }}"><span class="fab fa-github icon-padded icon-manatee icon-md"></span></a>
+							{% endif %}
+							{% if include.github_url %}
+							<a href="{{ include.github_url }}"><span class="fab fa-github icon-padded icon-manatee icon-md"></span></a>
+							{% endif %}
+							{% if include.arxiv_url %}
+							<a href="{{ include.arxiv_url }}"><span class="icon-md fa fa-file-pdf icon-padded icon-manatee"></span></a>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4">
+				<a href="{{ include.url }}"><img src="/assets/img/lazyload-ph.png" data-src="/assets/img/{{ include.img }}" class="img-fluid img-protected mx-auto d-block lazyload" alt="image" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-entry END -->
