@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	{% include header.html canonical=page.canonical title=page.title %}
+	{% include header_content.html canonical=page.canonical title=page.title %}
 </head>
 <body>
 
@@ -13,15 +13,14 @@
 <div class="page-container">
 
 <!-- Banner -->
-{% if page.banner_small %}
+{% if page.banner_size == "small" %}
 
 {% include banner_small.html %}
 
-{% elsif page.banner_medium %}
+{% elsif page.banner_size == "medium" %}
 
 {% include banner_medium.html %}
 
-{% elsif page.banner_large %}
 {% endif %}
 
 <!-- Menu bar -->

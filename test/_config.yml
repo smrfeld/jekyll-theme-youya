@@ -1,2 +1,27 @@
 theme: youya
 
+title: Oliver K. Ernst
+
+background_img_folder: background_imgs
+no_background_images: 1
+
+logo_black: logo_black.png
+logo_white: logo_white.png
+
+menu:
+  - home:
+    title: Home
+    url: /index.html
+  - page:
+    title: Page
+    url: /page.html
+
+profile_img: profile.jpg
+about: "I am a software engineer at Microsoft working on computer vision.<br /><br />
+  I finished my Ph.D. in physics at UC San Diego, working on physics-informed machine learning in Terry Sejnowski's lab at the Salk Institute.
+  After graduating, I helped create a startup at the intersection of fitness & AI.<br /><br />
+  Lately I've been trying to learn more about life & human nature."
+
+github_url: https://github.com/smrfeld
+linkedin_url: https://www.linkedin.com/in/oliver-k-ernst/
+google_scholar_url: https://scholar.google.com/citations?user=_jUygkwAAAAJ&amp;hl=en

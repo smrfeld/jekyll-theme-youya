@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	{% include heading.html canonical=page.canonical title=page.title %}
+	{% include header_content.html canonical=page.canonical title=page.title %}
 </head>
 <body>
 
@@ -21,7 +21,7 @@
 			<div class="row top-fix">
 				<div class="col fill-row">
 					<div class="fill-column">
-						<img src="assets/img/lazyload-ph.png" class="img-fluid img-protected mx-auto d-block fill-div lazyload" alt="placeholder image" id="bkgrnd-img" />
+						<img src="assets/img/lazyload-ph.png" class="img-fluid img-protected mx-auto d-block fill-div lazyload" alt="placeholder image" id="bkgrnd-img" style="object-fit: cover;" />
 					</div>
 				</div>
 			</div>
@@ -29,7 +29,10 @@
 				<div class="col-12">
 					<nav class="navbar navbar-light row navbar-expand-sm p-style-secondary">
 						<div class="container-fluid flex-column">
-							<a class="navbar-brand mx-auto" href="/index.html"><img src="assets/img/lazyload-ph.png" data-src="assets/img/{{ site.logo_black_img }}" alt="logo" class="lazyload" /></a>
+							{% if site.logo_black %}
+							<a class="navbar-brand mx-auto" href="/index.html"><img src="assets/img/lazyload-ph.png" data-src="assets/img/{{ site.logo_black }}" alt="logo" class="lazyload" /></a>
+							{% endif %}
+							{% if site.menu %}
 							<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 menu-icon-squares" data-bs-toggle="collapse" data-bs-target=".navbar-46263" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 							</button>
@@ -42,6 +45,7 @@
 									{% endfor %}	
 								</ul>
 							</div>
+							{% endif %}
 						</div>
 					</nav>
 				</div>
@@ -51,6 +55,7 @@
 <!-- bloc-0 END -->
 
 <!-- bloc-2 -->
+{% if site.about %}
 <div class="bloc l-bloc" id="bloc-2">
 	<div class="container bloc-no-padding">
 		<div class="row voffset-md">
@@ -68,6 +73,7 @@
 		</div>
 	</div>
 </div>
+{% endif %}
 <!-- bloc-2 END -->
 
 <!-- Scroll and footer -->
