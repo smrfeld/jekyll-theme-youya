@@ -9,8 +9,8 @@
 			{% endif %}
 				<div id="accordion-{{ include.unique_id }}">
 					<div class="card border-0">
-						<div class="card-header bgc-white border-transparent" id="heading3">
-							<div class="row">
+						<div class="card-header border-transparent bgc-white" id="heading1">
+							<div class="row" data-bs-toggle="collapse" data-bs-target="#accordion-{{ include.unique_id }}-item-1" aria-controls="accordion-{{ include.unique_id }}-item-1" aria-expanded="true">
                                 {% if include.date %}
                                 <div class="col-lg-12 offset-lg-0 offset-md-0 col-md-12">
 									<p class="mg-clear text-lg-start p-style-tertiary text-start text-sm-start">
@@ -22,9 +22,9 @@
 									<h5 class="mg-sm">
 										<strong>{{ include.title }}</strong>
 									</h5>
-									{% if include.subtitle %}
+									{% if include.description %}
 									<p class="p-fixed-size p-style-secondary mg-clear">
-										{{ include.subtitle }}
+										{{ include.description }}
 									</p>
 									{% endif %}
 									{% if include.tags %}
@@ -39,23 +39,25 @@
 								</div>
 							</div>
 						</div>
-						<div id="accordion-{{ include.unique_id }}-item-3" class="collapse" aria-labelledby="heading3" data-bs-parent="#accordion-{{ include.unique_id }}">
-							<div class="card-body">
+						<div id="accordion-{{ include.unique_id }}-item-1" class="collapse" aria-labelledby="heading1" data-bs-parent="#accordion-{{ include.unique_id }}">
+							<div class="card-body bgc-snow">
 								<div class="text-lg-start text-md-start text-sm-start text-start">
 									{% if include.github_url %}
-									<p class="p-style-secondary mg-clear p-with-icon">
-										<a href="{{ include.github_url }}"><span class="mg-md"></span><span class="fab fa-github icon-manatee icon-fixed float-lg-none icon-sm"></span>{{ include.github_label }}</a>
-									</p>
+									<a href="{{ include.github_url }}"><span class="icon-md fab fa-github icon-md-padded float-lg-none icon-common"></span></a>
+									{% endif %}
+									{% if include.medium_url %}
+									<a href="{{ include.medium_url }}"><span class="icon-md fab fa-medium icon-md-padded icon-common"></span></a>
 									{% endif %}
 									{% if include.arxiv_url %}
-									<p class="p-style-secondary mg-clear p-with-icon">
-										<a href="{{ include.arxiv_url }}"><span class="mg-md"></span><span class="icon-manatee fa fa-file-pdf icon-fixed icon-sm"></span>{{ include.arxiv_label }}</a>
-									</p>
+									<a href="{{ include.arxiv_url }}"><span class="icon-md fa fa-file-pdf icon-md-padded icon-common"></span></a>
+									{% endif %}
+									{% if include.other_url %}
+									<a href="{{ include.other_url }}"><span class="icon-md icon-md-padded fa fa-external-link-alt icon-common "></span></a>
 									{% endif %}
 								</div>
-								{% if include.description %}
+								{% if include.description_long %}
 								<p class="p-style-secondary">
-									{{ include.description }}
+									{{ include.description_long }}
 								</p>
 								{% endif %}
 							</div>
