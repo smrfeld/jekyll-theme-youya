@@ -22,9 +22,9 @@
 									<h5 class="mg-sm">
 										<strong>{{ include.title }}</strong>
 									</h5>
-									{% if include.description %}
+									{% if include.description_short %}
 									<p class="p-fixed-size p-style-secondary mg-clear">
-										{{ include.description }}
+										{{ include.description_short }}
 									</p>
 									{% endif %}
 									{% if include.tags %}
@@ -55,6 +55,21 @@
 									<a href="{{ include.other_url }}"><span class="icon-md icon-md-padded fa fa-external-link-alt icon-common "></span></a>
 									{% endif %}
 								</div>
+								{% if include.used_in_publication %}
+								<p class="p-style-secondary">
+									Used in publication: {{ include.used_in_publication }}
+								</p>
+								{% endif %}
+								{% if include.arxiv %}
+								<p class="p-style-secondary">
+									arXiv: {{ include.arxiv }}
+								</p>
+								{% endif %}
+								{% if include.paper %}
+								<p class="p-style-secondary">
+									Publication: {{ include.paper }}
+								</p>
+								{% endif %}
 								{% if include.description_long %}
 								<p class="p-style-secondary">
 									{{ include.description_long }}

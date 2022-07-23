@@ -1,0 +1,26 @@
+{% include heading.html title=include.title tag=include.tag %}
+
+{% for entry in site.data[include.data_src] %}
+
+    {% capture unique_id %}{{ include.data_src | append: forloop.index }}{% endcapture %}
+
+    {% assign tags = entry.tags | split: ", " %}
+
+    {% include entry_collapsible.html 
+        title=entry.title
+        description_short=entry.description_short
+        tags=tags
+        github_url=entry.github_url
+        arxiv_url=entry.arxiv_url
+        medium_url=entry.medium_url
+        other_url=entry.other_url
+        unique_id=unique_id
+        description_long=entry.description_long
+        img=entry.img
+        date=entry.date
+        used_in_publication=entry.used_in_publication
+        arxiv=entry.arxiv
+        paper=entry.paper
+        %}
+
+{% endfor %}

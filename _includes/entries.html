@@ -1,0 +1,19 @@
+{% include heading.html title=include.title tag=include.tag %}
+
+{% for entry in site.data[include.data_src] %}
+
+    {% capture unique_id %}{{ include.data_src | append: forloop.index }}{% endcapture %}
+
+    {% assign tags = entry.tags | split: ", " %}
+
+    {% include entry.html 
+        title=entry.title
+        description=entry.description
+        tags=tags
+        url=entry.url
+        unique_id=unique_id
+        img=entry.img
+        date=entry.date
+        %}
+
+{% endfor %}
