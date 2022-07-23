@@ -1,0 +1,74 @@
+---
+- book1:
+  title: How do you live?
+  author: Yoshino Genzaburō
+  category: fiction
+  date: 2022-04
+  img: how_do_you_live.jpg
+- book2:
+  title: How do you live?
+  author: Yoshino Genzaburō
+  category: fiction
+  date: 2022-03
+  img: how_do_you_live.jpg
+- book3:
+  title: How do you live?
+  author: Yoshino Genzaburō
+  category: fiction
+  date: 2022-02
+  img: how_do_you_live.jpg
+- book4:
+  title: How do you live?
+  author: Yoshino Genzaburō
+  category: fiction
+  date: 2022-01
+  img: how_do_you_live.jpg
+- book5:
+  title: How do you live?
+  author: Yoshino Genzaburō
+  category: fiction
+  date: 2021-12
+  img: how_do_you_live.jpg
+- book6:
+  title: How do you live?
+  author: Yoshino Genzaburō
+  category: fiction
+  date: 2021-11
+  img: how_do_you_live.jpg
+
+- book7:
+  title: Learning deep learning
+  author: Magnus Ekman
+  category: nonfiction
+  date: 2022-04
+  img: learning_deep_learning.jpg
+- book8:
+  title: Learning deep learning
+  author: Magnus Ekman
+  category: nonfiction
+  date: 2022-03
+  img: learning_deep_learning.jpg
+- book9:
+  title: Learning deep learning
+  author: Magnus Ekman
+  category: nonfiction
+  date: 2022-02
+  img: learning_deep_learning.jpg
+- book10:
+  title: Learning deep learning
+  author: Magnus Ekman
+  category: nonfiction
+  date: 2022-01
+  img: learning_deep_learning.jpg
+- book11:
+  title: Learning deep learning
+  author: Magnus Ekman
+  category: nonfiction
+  date: 2021-12
+  img: learning_deep_learning.jpg
+- book12:
+  title: Learning deep learning
+  author: Magnus Ekman
+  category: nonfiction
+  date: 2021-11
+  img: learning_deep_learning.jpg

@@ -1,10 +1,17 @@
 ---
 layout: regular
 banner_size: medium
+toc:
+    - t1:
+        title: Nonfiction
+        tag: readingnonfiction
+    - t2:
+        title: Fiction
+        tag: readingfiction
 ---
 
-{% assign test_books = "label:Fuck off,img:totoro.jpg" | split: "," %}
+{% include paragraph.html text="You are what you read - what I've been reading c.a. pandemic onward." %}
 
-{% include heading.html title="Reading" %}
+{% include books.html title="Reading - nonfiction" tag="readingnonfiction" data_src="books" category="nonfiction" %}
 
-{% include books.html books=test_books %}
+{% include books.html title="Reading - fiction" tag="readingfiction" data_src="books" category="fiction" %}
