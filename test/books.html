@@ -1,0 +1,10 @@
+---
+layout: regular
+banner_size: medium
+---
+
+{% assign test_books = "label:Fuck off,img:totoro.jpg" | split: "," %}
+
+{% include heading.html title="Reading" %}
+
+{% include books.html books=test_books %}

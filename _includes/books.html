@@ -1,0 +1,26 @@
+<!-- bloc-books BEGIN -->
+<div class="bloc tc-dim-gray l-bloc" id="bloc-books">
+	<div class="container bloc-sm-md bloc-sm-lg bloc-sm-sm bloc-sm">
+        <div class="row">
+            {% for entry in include.books %}
+                {% capture label %}{{ entry.title | append: " by " | append: entry.author }}{% endcapture %}
+
+                {% capture irow %}{{ forloop.index0 | divided_by: 4 }}{% endcapture %}
+                {% capture icol_offset %}{{ irow | times: 4 }}{% endcapture %}
+                {% capture icol %}{{ forloop.index0 | minus: icol_offset }}{% endcapture %}
+
+                {% case icol %}
+                {% when "0" %}
+                    {% include book_col1.html label=label img=entry.img %}
+                {% when "1" %}
+                    {% include book_col2.html label=label img=entry.img %}
+                {% when "2" %}
+                    {% include book_col3.html label=label img=entry.img %}
+                {% else %}
+                    {% include book_col4.html label=label img=entry.img %}
+                {% endcase %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- bloc-books END -->

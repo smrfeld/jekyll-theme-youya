@@ -1,6 +1,19 @@
 ---
 layout: regular
 banner_size: medium
+toc:
+    - t1:
+        title: Entries with images
+        tag: t1
+    - t2:
+        title: Entries without images
+        tag: t2
+    - t3:
+        title: Collapsible with images
+        tag: t3
+    - t4:
+        title: Collapsible without images
+        tag: t4
 ---
 
 {% assign test_tags = "Totoro, Ghibli" | split: ", " %}
@@ -14,7 +27,7 @@ banner_size: medium
 {% assign test_github_url = test_url %}
 {% assign test_arxiv_url = test_url %}
 
-{% include heading.html title="Entries with images" %}
+{% include heading.html title="Entries with images" tag="t1" %}
 
 {% include entry.html 
     date=test_date
@@ -52,7 +65,7 @@ banner_size: medium
     arxiv_url=test_arxiv_url
     %}
 
-{% include heading.html title="Entries without images" %}
+{% include heading.html title="Entries without images" tag="t2" %}
 
 {% include entry.html 
     date=test_date
@@ -87,7 +100,7 @@ banner_size: medium
     arxiv_url=test_arxiv_url
     %}
 
-{% include heading.html title="Collapsible entries with image" %}
+{% include heading.html title="Collapsible entries with image" tag="t3" %}
 
 {% include entry_collapsible.html 
     date=test_date
@@ -117,7 +130,7 @@ banner_size: medium
     description_long=test_description_long
     %}
 
-{% include heading.html title="Collapsible entries without image" %}
+{% include heading.html title="Collapsible entries without image" tag="t4" %}
 
 {% include entry_collapsible.html 
     date=test_date
