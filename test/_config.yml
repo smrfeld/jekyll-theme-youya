@@ -15,9 +15,12 @@ menu:
   - page:
     title: Page
     url: /page.html
-  - books:
-    title: Books
-    url: /books.html
+  - reading:
+    title: Reading
+    url: /reading.html
+  - writing:
+    title: Writing
+    url: /writing.html
 
 profile_img: profile.jpg
 about: "I am a software engineer at Microsoft working on computer vision.<br /><br />

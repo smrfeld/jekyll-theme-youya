@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+	{% include header_content.html canonical=page.canonical title=page.title %}
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
+<!-- Preloader END -->
+
+<!-- Main container -->
+<div class="page-container">
+
+<!-- Banner -->
+{% include banner_small.html %}
+
+<!-- Menu bar -->
+{% include menu_bar.html %}
+
+{% if page.medium_url %}
+<!-- bloc-medium -->
+<div class="bloc l-bloc" id="bloc-medium">
+	<div class="container bloc-no-padding-lg bloc-no-padding-md bloc-no-padding-sm bloc-no-padding">
+		<div class="row">
+			<div class="text-center text-md-start col-lg-8 offset-lg-2">
+				<h3 class="mg-md text-lg-center">
+					<a href="{{ page.medium_url }}"><span class="fab fa-medium icon-padded icon-md icon-padded-right"></span></a>Read this on Medium
+				</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-medium END -->
+{% endif %}
+
+<!-- bloc-content -->
+<div class="bloc l-bloc" id="bloc-content">
+	<div class="container bloc-sm-lg bloc-sm-md bloc-sm-sm bloc-sm">
+		<div class="row">
+			<div class="text-center text-md-start col-lg-8 offset-lg-2">
+				<!-- Content -->
+				{{ content }}
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-content END -->
+
+<!-- Scroll and footer -->
+{% include scroll_button_and_footer.html %}
+
+</div>
+<!-- Main container END -->
+    
+{% include js_footer.html is_home=false %}
+
+</body>
+</html>
