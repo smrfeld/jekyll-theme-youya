@@ -1,0 +1,12 @@
+{% include heading.html title=include.title tag=include.tag %}
+
+{% for entry in site.data[include.data_src] %}
+
+    {% include photo.html
+        url=entry.url
+        img=entry.img
+        description=entry.description 
+        location=entry.location
+        %}
+
+{% endfor %}

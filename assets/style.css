@@ -896,6 +896,10 @@ h5{
 .label-link a:hover{
 	color:#438DEC!important;
 }
+.img-full-width{
+	height:100%;
+	width:100%;
+}
 
 /* = Colour
 -------------------------------------------------------------- */

@@ -1,0 +1,23 @@
+<!-- bloc-photo -->
+<div class="bloc bloc-fill-screen l-bloc" id="bloc-photo">
+	<div class="container">
+		<div class="row">
+			<div class="text-center text-md-start col-lg-10 offset-lg-1">
+                {% if include.img %}
+                    <img src="/assets/img/lazyload-ph.png" data-src="/assets/img/{{ include.img }}" class="img-fluid img-protected mx-auto d-block lazyload" alt="photo" />
+                {% else %}
+                    <img src="/assets/img/lazyload-ph.png" data-src="{{ include.url }}" class="img-fluid img-protected mx-auto d-block lazyload" alt="photo" />
+                {% endif %}
+                {% if include.description || include.location %}
+				<p class="mg-lg text-lg-center">
+                    {% if include.location %}
+                        {{ include.location }} - 
+                    {% endif %}
+                    {{ include.description }}
+				</p>
+                {% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-photo END -->

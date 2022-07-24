@@ -1,0 +1,9 @@
+---
+- photo1:
+  img: castle_in_the_sky_2.jpg
+  description: Castle in the Sky
+  location: Laputa
+- photo2:
+  img: castle_in_the_sky.jpg
+  description: Castle in the Sky
+  location: Laputa
