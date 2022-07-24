@@ -1,6 +1,7 @@
 ---
 layout: writing
 title:  "Castle in the Sky"
+medium_url: https://medium.com/
 ---
 
 # Castle in the Sky
