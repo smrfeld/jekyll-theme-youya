@@ -4,7 +4,7 @@ Yōuyǎ is an elegant profile theme for Jekyll.
 
 ## Demo
 
-[You can see a live demo of the site in action here](...).
+[You can see a live demo of the site in action here.](...)
 
 <img src="test/figures_readme/home.png" alt="drawing" width="400"/>
 
@@ -16,7 +16,7 @@ Install theme in the main directory:
 ```
 bundle install
 ```
-Then set the theme in you `_config.yml` file:
+Then set the theme in your `_config.yml` file:
 ```
 theme: youya
 ```
