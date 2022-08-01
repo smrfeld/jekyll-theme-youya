@@ -44,19 +44,19 @@ Then set the following required fields (see also the example `_config.yml` in th
     menu:
     - home:
         title: Home
-        url: /index.html
+        url: index.html
     - page:
         title: Page
-        url: /page.html
+        url: page.html
     - reading:
         title: Reading
-        url: /reading.html
+        url: reading.html
     - writing:
         title: Writing
-        url: /writing.html
+        url: writing.html
     - photography:
         title: Photography
-        url: /photography.html
+        url: photography.html
     ```
 
 * About section text and image (referring to `assets/img` folder):
