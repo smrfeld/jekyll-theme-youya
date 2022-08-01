@@ -2,7 +2,7 @@ theme: youya
 
 # Background
 background_img_folder: background_imgs
-no_background_images: 1
+no_background_images: 2
 
 # Logo images
 logo_black: logo_black.png

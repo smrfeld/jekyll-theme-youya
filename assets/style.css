@@ -578,10 +578,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .text-span-style{
 	font-weight:normal;
 }
-.h1-oliver-k-ernst-style{
-	font-family:"Vollkorn";
-	font-weight:300;
-}
 .white-box{
 	background-color:#FFFFFF;
 }
@@ -879,6 +875,8 @@ h5{
 }
 .img-namelblbla-style{
 	height:140px;
+	padding-bottom:5px;
+	padding-top:5px;
 }
 .icon-md-padded{
 	padding-bottom:5px;
