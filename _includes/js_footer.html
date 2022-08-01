@@ -1,13 +1,13 @@
 <!-- Additional JS -->
-<script src="/assets/js/bootstrap.bundle.min.js?5191"></script>
-<script src="/assets/js/blocs.min.js?6152"></script>
-<script src="/assets/js/lazysizes.min.js" defer></script>
+<script src="assets/js/bootstrap.bundle.min.js?5191"></script>
+<script src="assets/js/blocs.min.js?6152"></script>
+<script src="assets/js/lazysizes.min.js" defer></script>
 
 <script type="text/javascript">
 	var total_images = {{ site.no_background_images }};
 	var random_number = Math.floor((Math.random()*total_images));
 	var number_str = String(random_number).padStart(4, '0');
-	var img_name = "/assets/img/{{ site.background_img_folder }}/" + number_str + ".jpeg";
+	var img_name = "assets/img/{{ site.background_img_folder }}/" + number_str + ".jpeg";
 	{% if include.is_home %}
 	console.log(img_name);
 	document.getElementById("bkgrnd-img").src = img_name;
