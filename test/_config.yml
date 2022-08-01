@@ -1,10 +1,13 @@
 theme: youya
 
-# Background
+# Favicon in assets - 32x32 pixels
+favicon: favicon.png
+
+# Background images in assets/img starting at 0000.jpeg, 0001.jpeg, etc
 background_img_folder: background_imgs
 no_background_images: 2
 
-# Logo images
+# Logo images in assets/img
 logo_black: logo_black.png
 logo_white: logo_white.png
 
@@ -26,7 +29,7 @@ menu:
     title: Photography
     url: /photography.html
 
-# About
+# About - profile image in assets/img
 about: "Hayao Miyazaki (宮崎 駿, Miyazaki Hayao, [mijaꜜzaki hajao]; born January 5, 1941) is a Japanese animator, director, producer, screenwriter, author, and manga artist. A co-founder of Studio Ghibli, he has attained international acclaim as a masterful storyteller and creator of Japanese animated feature films, and is widely regarded as one of the most accomplished filmmakers in the history of animation."
 about_img: profile.jpg
 
