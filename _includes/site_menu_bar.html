@@ -9,11 +9,9 @@
 						<div class="navbar-content-area col-12 text-lg-center text-md-center text-sm-center">
 							<ul class="list-horizontal-layout list-unstyled p-style-secondary list-sp-md">
 								{% for entry in include.menu %}
-								{% for entry0 in entry %}
 								<li>
-									<a href="#" class="a-btn a-block" data-scroll-speed="1000" onclick="scrollToTarget('#{{ entry0[1].tag }}',this)">{{ entry0[1].title }}</a>
+									<a href="#" class="a-btn a-block" data-scroll-speed="1000" onclick="scrollToTarget('#{{ entry.tag }}',this)">{{ entry.title }}</a>
 								</li>
-								{% endfor %}
 								{% endfor %}		
 							</ul>
 						</div>
