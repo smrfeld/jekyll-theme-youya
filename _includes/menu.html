@@ -1,0 +1,9 @@
+{% for entry in site.menu %}
+<li class="nav-item">
+    {% if entry.local_url %}
+    <a href="{{ site.url }}/{{ entry.local_url }}" class="nav-link">{{ entry.title }}</a>
+    {% else %}
+    <a href="{{ entry.remote_url }}" class="nav-link">{{ entry.title }}</a>
+    {% endif %}
+</li>
+{% endfor %}	

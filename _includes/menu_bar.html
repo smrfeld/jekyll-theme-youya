@@ -10,11 +10,7 @@
 						</button>
 						<div class="collapse navbar-collapse navbar-28700  fullscreen-nav open-up navbar-31182 navbar-28525 navbar-26094">
 							<ul class="site-navigation nav navbar-nav ms-auto p-style-secondary">
-								{% for entry in site.menu %}
-								<li class="nav-item">
-									<a href="{{ entry.url }}" class="nav-link">{{ entry.title }}</a>
-								</li>
-								{% endfor %}	
+								{% include menu.html %}
 							</ul>
 						</div>
 					</div>
