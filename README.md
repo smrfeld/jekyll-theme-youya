@@ -4,7 +4,7 @@ Yōuyǎ is an elegant profile theme for Jekyll.
 
 ## Demo
 
-[You can see a live demo of the site in action here.](...)
+[You can see a live demo of the site in action here.](https://smrfeld.github.io/jekyll-theme-youya)
 
 <img src="test/figures_readme/home.png" alt="drawing" width="400"/>
 
@@ -76,12 +76,16 @@ Then set the following required fields (see also the example `_config.yml` in th
 ## Features
 
 * Profile with sections for:
-    * Entries for code, academic papers or projects, with links to GitHub & arXiv.
+    * Code with links to GitHub
+    * Academic papers with links to arXvi & descriptions
+    * Projects, with links to GitHub & arXiv
     * Reading book list
-    * Writing blog entries
+    * Writing & blog entries
     * Photography
     * About
 * Random background from a collection of images.
+* Custom menus for each page.
+* Social links.
 * Easily customizable.
 
 ## Tests
