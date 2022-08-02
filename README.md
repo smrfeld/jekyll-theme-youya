@@ -22,6 +22,11 @@ theme: youya
 ```
 Then set the following required fields (see also the example `_config.yml` in the `test` folder):
 
+* URL of site:
+    ```
+    url: https://smrfeld.github.io/jekyll-theme-youya
+    ```
+
 * Background images: The background image is read from a folder under `assets/img` in your site loads a random image each time: `0000.jpeg`,`0001.jpeg`,.... In your `_config.yml`:
     ```
     background_img_folder: background_imgs
@@ -42,26 +47,21 @@ Then set the following required fields (see also the example `_config.yml` in th
 * Menu: this is the main navigation menu:
     ```
     menu:
-    - home:
-        title: Home
-        url: index.html
-    - page:
-        title: Page
-        url: page.html
-    - reading:
-        title: Reading
-        url: reading.html
-    - writing:
-        title: Writing
-        url: writing.html
-    - photography:
-        title: Photography
-        url: photography.html
+      - title: Home
+        local_url: index.html
+      - title: Page
+        local_url: page.html
+      - title: Reading
+        local_url: reading.html
+      - title: Writing
+        local_url: writing.html
+      - title: Photography
+        local_url: photography.html
     ```
 
 * About section text and image (referring to `assets/img` folder):
     ```
-    about: "abcdef"
+    about: "Hello World"
     about_img: profile.jpg
     ```
 
