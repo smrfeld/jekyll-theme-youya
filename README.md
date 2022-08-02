@@ -58,6 +58,7 @@ Then set the following required fields (see also the example `_config.yml` in th
       - title: Photography
         local_url: photography.html
     ```
+    You can also specify a `remote_url` instead of a `local_url` - `local_url` is relative to the top-level directory of your site.
 
 * About section text and image (referring to `assets/img` folder):
     ```
