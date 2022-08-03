@@ -12,15 +12,21 @@ Yōuyǎ is an elegant profile theme for Jekyll.
 
 ## Get started
 
-Install theme in the main directory:
-```
-bundle install
-```
-Then set the theme in your `_config.yml` file:
-```
-theme: youya
-```
-Then set the following required fields (see also the example `_config.yml` in the `test` folder):
+1. In your own Jekyll website, add it to your `Gemfile`
+  ```
+  gem "youya", github: "smrfeld/jekyll-theme-youya", branch: "main"
+  ```
+  and run
+  ```
+  bundle install
+  ```
+  or just put this whole repo in your `_theme/youya` directory.
+4. Finally set the theme in your `_config.yml` file:
+  ```
+  theme: youya
+  ```
+  
+Now you can set the following required fields (see also the example `_config.yml` in the `test` folder):
 
 * URL of site:
     ```
