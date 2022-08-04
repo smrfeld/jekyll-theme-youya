@@ -904,6 +904,22 @@ h5{
 	max-width:100%;
 	height:auto;
 }
+.content-col p{
+	color:#000000!important;
+	font-size:20px;
+	line-height:1.6em;
+	margin-bottom:27px;
+}
+.highlight{
+	background-color:#EBEBEB;
+	font-size:16px;
+	padding:10px 10px 10px 10px;
+}
+.highlighter-rouge{
+	background-color:#EBEBEB;
+	color:#000000!important;
+	padding:3px 3px 3px 3px;
+}
 h3 a{
 	text-decoration:none;
 }

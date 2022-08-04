@@ -11,3 +11,9 @@ Castle in the Sky (Japanese: 天空の城ラピュタ, Hepburn: Tenkū no Shiro 
 ![](../assets/img/castle_in_the_sky_2.jpg)
 
 The film won the Animage Anime Grand Prix in 1986. The film received positive reviews and grossed over $16 million at the box office. It went on to gross a total of approximately $157 million in box office, home video and soundtrack sales, as of 2021.[4] In Japanese polls asking about the greatest animations, it was voted the second-best animated film at the 2006 Japan Media Arts Festival and was voted first place in a 2008 Oricon audience poll. Castle in the Sky has had a strong influence on Japanese popular culture, and has inspired numerous films, media and games, in Japan and internationally.[5][6] It has been cited as an influential classic in the steampunk and dieselpunk genres.[2][7]
+
+Here is some `code` in various formats:
+```
+def func(x):
+    return x**2
+```
