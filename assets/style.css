@@ -898,6 +898,18 @@ h5{
 	height:100%;
 	width:100%;
 }
+.content-col{
+}
+.content-col img{
+	max-width:100%;
+	height:auto;
+}
+h3 a{
+	text-decoration:none;
+}
+h3 a:hover{
+	color:#438DEC!important;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -1105,6 +1117,14 @@ h5{
 		font-weight:300;
 		color:rgba(0,0,0,0.80)!important;
 	}
-	
+
+	.youya-nav-list{
+	}
+	.youya-nav-list a{
+		color:#FFFFFF!important;
+	}
+	.youya-nav-list a:hover{
+		color:#438DEC!important;
+	}
 }
 
