@@ -1,7 +1,7 @@
 {% include heading.html title=include.title tag=include.tag %}
 
-{% if entry.sort_field %}
-{% assign dat = site.data[include.data_src] | sort: entry.sort_field | reverse %}
+{% if include.sort_field %}
+{% assign dat = site.data[include.data_src] | sort: include.sort_field | reverse %}
 {% else %}
 {% assign dat = site.data[include.data_src] %}
 {% endif %}
