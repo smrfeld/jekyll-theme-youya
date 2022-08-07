@@ -783,9 +783,10 @@ h2 a{
 	text-decoration:none;
 }
 .p-fixed-size{
-	height:50px;
 	text-overflow:ellipsis;
 	overflow:hidden;
+	max-height:50px;
+	height:auto;
 }
 .p-style-secondary a:hover{
 	font-family:"Lato";
@@ -925,6 +926,13 @@ h3 a{
 }
 h3 a:hover{
 	color:#438DEC!important;
+}
+.img-fixed-height{
+	height:130px;
+	max-width:100%;
+}
+.img-book{
+	max-height:250px;
 }
 
 /* = Colour
