@@ -3,27 +3,27 @@
 	<div class="container bloc-sm-sm bloc-sm bloc-sm-lg">
 		<div class="row">
 			{% if include.date %}
-			<div class="offset-lg-1 col-lg-10 col-md-10 offset-md-1">
-				<p class="mg-clear text-lg-start p-style-tertiary text-start text-sm-start">
+			<div class="offset-lg-1 col-lg-10 col-md-10 offset-md-1 offset-sm-1 offset-1">
+				<p class="mg-clear text-lg-start youya-p-alt text-start text-sm-start">
 					{{ include.date }}
 				</p>
 			</div>
 			{% endif %}
 			{% if include.img %}
-			<div class="offset-lg-1 col-lg-6 offset-md-1 col-md-6">
+			<div class="offset-lg-1 col-lg-7 offset-md-1 col-md-7 col-sm-7 offset-sm-1 col-7 offset-1">
 			{% else %}
-			<div class="offset-lg-1 col-lg-10 offset-md-1 col-md-10">
+			<div class="offset-lg-1 col-lg-10 offset-md-1 col-md-10 col-10 offset-1">
 			{% endif %}
 				<h5 class="mg-sm">
 					<a href="{{ include.url }}"><strong>{{ include.title }}</strong></a>
 				</h5>
 				{% if include.description %}
-				<p class="p-fixed-size p-style-secondary mg-clear">
+				<p class="p-fixed-size youya-p mg-clear d-md-block  d-none ">
 					{{ include.description }}
 				</p>
 				{% endif %}
 				{% if include.tags %}
-				<div>
+				<div class="d-md-block  d-none">
 					{% for tag in include.tags %}
 					<label class="label-link">
 						{{ tag }}
@@ -33,8 +33,8 @@
 				{% endif %}
 			</div>
 			{% if include.img %}
-			<div class="col-lg-4 col-md-4">
-				<a href="{{ include.url }}"><img src="{{ site.url }}/assets/img/lazyload-ph.png" data-src="{{ site.url }}/assets/img/{{ include.img }}" class="img-fluid img-protected mx-auto d-block lazyload img-fixed-height" alt="image" /></a>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+				<a href="{{ include.url }}"><img src="{{ site.url }}/assets/img/lazyload-ph.png" data-src="{{ site.url }}/assets/img/{{ include.img }}" class="img-fluid img-protected mx-auto d-block lazyload youya-entry-img float-lg-end float-end float-sm-end float-md-end" alt="image" /></a>
 			</div>
 			{% endif %}
 		</div>

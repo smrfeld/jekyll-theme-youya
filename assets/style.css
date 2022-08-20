@@ -600,6 +600,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .border-transparent{
 	border-color:transparent!important;
+	padding:0px 0px 0px 0px;
 }
 .p-style{
 	font-family:"Lato";
@@ -612,14 +613,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-weight:300;
 	color:#000000!important;
 }
-.p-style-secondary{
+.youya-p{
 	font-family:"Lato";
 	font-weight:300;
 	color:rgba(0,0,0,0.70)!important;
 	text-decoration:none;
 	text-transform:none;
 }
-.p-style-tertiary{
+.youya-p-alt{
 	color:rgba(0,0,0,0.50)!important;
 	font-family:"Lato";
 	font-weight:300;
@@ -733,7 +734,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	width:100%;
 	background-size:cover;
 }
-.p-style-secondary a{
+.youya-p a{
 	text-decoration:none;
 	color:rgba(0,0,0,0.80)!important;
 	font-family:"Lato";
@@ -788,7 +789,7 @@ h2 a{
 	max-height:50px;
 	height:auto;
 }
-.p-style-secondary a:hover{
+.youya-p a:hover{
 	font-family:"Lato";
 	font-weight:300;
 	color:#0066DB!important;
@@ -927,9 +928,10 @@ h3 a{
 h3 a:hover{
 	color:#438DEC!important;
 }
-.img-fixed-height{
+.youya-entry-img{
+	width:130px;
 	height:130px;
-	max-width:100%;
+	object-fit: cover;
 }
 .img-book{
 	max-height:250px;
@@ -1062,6 +1064,11 @@ h3 a:hover{
 	   width: 180px;
 	   height: 320px;
     }
+	.youya-entry-img{
+		width:90px;
+		height:90px;
+		object-fit: cover;
+	}
 }
 
 @media (max-width: 991px){
@@ -1074,7 +1081,7 @@ h3 a:hover{
 		bottom:206px;
 		position:absolute;
 	}
-	.p-style-secondary{
+	.youya-p{
 		text-decoration:none;
 		text-transform:none;
 		color:rgba(0,0,0,0.80)!important;
@@ -1087,7 +1094,7 @@ h3 a:hover{
 	h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		color:#000000!important;
 	}
-	.p-style-secondary a{
+	.youya-p a{
 		font-family:"Lato";
 		font-weight:300;
 	}
@@ -1131,7 +1138,7 @@ h3 a:hover{
 }
 
 @media (max-width: 575px){
-	.p-style-secondary{
+	.youya-p{
 		color:#646464!important;
 		font-family:"Lato";
 		font-weight:300;
@@ -1139,7 +1146,7 @@ h3 a:hover{
 	.no-divider{
 		padding-top:0px;
 	}
-	.p-style-secondary a{
+	.youya-p a{
 		font-family:"Lato";
 		font-weight:300;
 		color:rgba(0,0,0,0.80)!important;
