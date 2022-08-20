@@ -102,6 +102,7 @@ bundle install
 ```
 Then build the site from the `test` directory:
 ```
+cd test
 bundle exec jekyll serve
 ```
 

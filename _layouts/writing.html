@@ -18,6 +18,19 @@
 <!-- Menu bar -->
 {% include menu_bar.html %}
 
+<!-- bloc-content -->
+<div class="bloc l-bloc" id="bloc-content">
+	<div class="container bloc-sm-lg bloc-sm-md bloc-sm-sm bloc-sm">
+		<div class="row">
+			<div class="text-md-start col-lg-8 offset-lg-2 text-sm-start text-start offset-sm-1 col-sm-10 content-col">
+				<!-- Content -->
+				{{ content }}
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-content END -->
+
 {% if page.medium_url %}
 <!-- bloc-medium -->
 <div class="bloc l-bloc" id="bloc-medium">
@@ -33,19 +46,6 @@
 </div>
 <!-- bloc-medium END -->
 {% endif %}
-
-<!-- bloc-content -->
-<div class="bloc l-bloc" id="bloc-content">
-	<div class="container bloc-sm-lg bloc-sm-md bloc-sm-sm bloc-sm">
-		<div class="row">
-			<div class="text-md-start col-lg-8 offset-lg-2 text-sm-start text-start offset-sm-1 col-sm-10 content-col">
-				<!-- Content -->
-				{{ content }}
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-content END -->
 
 <!-- Scroll and footer -->
 {% include scroll_button_and_footer.html %}
