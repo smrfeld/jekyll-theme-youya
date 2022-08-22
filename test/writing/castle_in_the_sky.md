@@ -2,6 +2,7 @@
 layout: writing
 title:  "Castle in the Sky"
 medium_url: https://medium.com/
+date: August 2, 1986 
 ---
 
 # Castle in the Sky

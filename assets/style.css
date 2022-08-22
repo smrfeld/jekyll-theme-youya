@@ -544,9 +544,14 @@ button{
 /* = Custom Styling
 -------------------------------------------------------------- */
 
-h1,h2,h3,h4,h5,h6,p,label,.btn,a{
+p,label,.btn,a,li{
 	font-family:"Lato";
 	font-weight:300;
+	color:#000000!important;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:"Vollkorn";
+	font-weight:700;
 	color:#000000!important;
 }
 .container{
@@ -908,16 +913,26 @@ h5{
 }
 .content-col p{
 	color:#000000!important;
-	font-size:20px;
+	font-size:17px;
 	line-height:1.6em;
 	margin-bottom:27px;
 }
-.highlight{
-	background-color:#EBEBEB;
-	font-size:16px;
-	padding:10px 10px 10px 10px;
+.content-col li{
+	color:#212529!important;
+	font-size:17px;
+	line-height:1.6em;
 }
-.highlighter-rouge{
+pre.highlight{
+	border: 10px solid white;
+	background:#EBEBEB;
+	font-size:16px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color:#000000!important;
+}
+code.highlighter-rouge{
 	background-color:#EBEBEB;
 	color:#000000!important;
 	padding:3px 3px 3px 3px;
@@ -1090,9 +1105,6 @@ h3 a:hover{
 		text-align:center;
 	}
 	.zero-spacing{
-	}
-	h1,h2,h3,h4,h5,h6,p,label,.btn,a{
-		color:#000000!important;
 	}
 	.youya-p a{
 		font-family:"Lato";

@@ -31,21 +31,30 @@
 </div>
 <!-- bloc-content END -->
 
-{% if page.medium_url %}
 <!-- bloc-medium -->
 <div class="bloc l-bloc" id="bloc-medium">
 	<div class="container bloc-no-padding-lg bloc-no-padding-md bloc-no-padding-sm bloc-no-padding">
 		<div class="row">
-			<div class="text-md-start col-lg-8 offset-lg-2 offset-md-1 col-md-10 text-sm-start col-sm-10 offset-sm-1 text-center">
-				<p class="mg-md text-lg-start">
-					<a href="{{ page.medium_url }}"><span class="fab fa-medium icon-padded icon-padded-right icon-sm"></span></a><a class="youya-p" href="abc.com">Read this on Medium</a><br>
+			<div class="col">
+				<div class="divider-h">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="text-md-start col-lg-8 offset-lg-2 offset-md-1 col-md-10 text-sm-start col-sm-10 offset-sm-1 text-center text-lg-start">
+				<p class="youya-p">
+					{{ site.author }}<br>{{ page.date }}<br>
 				</p>
+				{% if page.medium_url %}
+				<p class="mg-md youya-p">
+					<a href="{{ page.medium_url }}"><span class="fab fa-medium icon-padded icon-padded-right icon-sm"></span></a><a class="youya-p" href="{{ page.medium_url }}">Read this on Medium</a><br>
+				</p>
+				{% endif %}
 			</div>
 		</div>
 	</div>
 </div>
 <!-- bloc-medium END -->
-{% endif %}
 
 <!-- Scroll and footer -->
 {% include scroll_button_and_footer.html %}
