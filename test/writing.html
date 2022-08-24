@@ -5,4 +5,5 @@ title: My Writing
 canonical_url: https://smrfeld.github.io/jekyll-theme-youya/writing.html
 ---
 
-{% include entries.html title="Writing" data_src="writing" %}
+{% assign srcs = "writing, writing_alt" | split: ", " %}
+{% include entries.html title="Writing" data_src=srcs %}
