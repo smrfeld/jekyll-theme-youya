@@ -13,7 +13,7 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.page-container{overflow: hidden;} /* Prevents unwanted scroll space when scroll FX used. */
+/* .page-container{overflow: hidden;} */ /* Prevents unwanted scroll space when scroll FX used. */
 a,button{transition: background .3s ease-in-out;outline: none!important;} /* Prevent blue selection glow on Chrome and Safari */
 a:hover{text-decoration: none; cursor:pointer;}
 
@@ -549,6 +549,11 @@ p,label,.btn,a,li{
 	font-weight:300;
 	color:#000000!important;
 }
+a:hover{
+	font-family:"Lato";
+	font-weight:300;
+	color:#0066DB!important;
+}
 h1,h2,h3,h4,h5,h6{
 	font-family:"Vollkorn";
 	font-weight:700;
@@ -809,11 +814,6 @@ a{
 	font-weight:300;
 	color:#000000!important;
 }
-a:hover{
-	font-family:"Lato";
-	font-weight:300;
-	color:#0000FF!important;
-}
 .header-text a{
 	color:#000000!important;
 	font-family:"PT Sans";
@@ -914,7 +914,7 @@ h5{
 .content-col p{
 	color:#000000!important;
 	font-size:17px;
-	line-height:1.6em;
+	line-height:1.5em;
 	margin-bottom:27px;
 }
 .content-col li{
@@ -953,6 +953,22 @@ h3 a:hover{
 }
 .youya-page-nav-list{
 	padding-top:17px;
+}
+
+
+
+#toc-wrapper {
+	border-left: 1px solid rgba(158, 158, 158, 0.17);
+	position: -webkit-sticky;
+	position: sticky;
+	top: 4rem;
+	transition: top 0.2s ease-in-out;
+	animation: fade-up 0.8s;
+}
+  
+#toc li a {
+	font-size: 1.0rem;  
+	font-weight: 400;
 }
 
 /* = Colour
