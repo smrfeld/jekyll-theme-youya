@@ -910,6 +910,10 @@ h5{
 .content-col img{
 	max-width:100%;
 	height:auto;
+	display:block;
+    margin:auto;
+	max-height: 300px;
+	width: auto;
 }
 .content-col p{
 	color:#000000!important;
@@ -967,7 +971,7 @@ h3 a:hover{
 }
   
 #toc li a {
-	font-size: 1.0rem;  
+	font-size: 0.8rem;  
 	font-weight: 400;
 }
 
