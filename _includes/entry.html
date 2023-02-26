@@ -36,6 +36,10 @@
 			<div class="col-lg-3 col-md-3 col-sm-3 col-3">
 				<a href="{{ include.url }}"><img src="{{ site.url }}/assets/img/lazyload-ph.png" data-src="{{ site.url }}/assets/img/{{ include.img }}" class="img-fluid img-protected mx-auto d-block lazyload youya-entry-img float-lg-end float-end float-sm-end float-md-end" alt="image" /></a>
 			</div>
+			{% elsif include.img_external %}
+			<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+				<a href="{{ include.url }}"><img src="{{ site.url }}/assets/img/lazyload-ph.png" data-src="{{ include.img_external }}" class="img-fluid img-protected mx-auto d-block lazyload youya-entry-img float-lg-end float-end float-sm-end float-md-end" alt="image" /></a>
+			</div>
 			{% endif %}
 		</div>
 	</div>
