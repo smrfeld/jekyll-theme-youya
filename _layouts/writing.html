@@ -4,19 +4,27 @@
 	{% include header_content.html canonical_url=page.canonical_url title=page.title %}
 
 	<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
+
+	<style>
+		img {
+			max-height:500px !important;
+			height:auto !important;
+			width:auto !important;
+		}
+		img + em {
+			font-style: normal;
+			font-size: 16px;
+			font-weight: 400;
+			font-size: 16px;
+			font-weight: 400;
+			display: block;
+			margin-top:10px;
+			margin-bottom:25px;
+			text-align:center;
+			color:rgba(0,0,0,.5);
+		}
+	</style>  
 </head>
-<style>
-	img {
-		max-height:500px;
-		height:auto;
-		width:auto;
-	}
-	img + em {
-		margin-top:10px;
-		margin-bottom:25px;
-		text-align:center;
-	}
-  </style>  
 <body>
 
 <!-- Preloader -->
