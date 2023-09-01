@@ -11,13 +11,13 @@
 
                 {% case icol %}
                 {% when "0" %}
-                    {% include book_col1.html label=label img=entry.img %}
+                    {% include book_col1.html label=label img=entry.img img_external=entry.img_external %}
                 {% when "1" %}
-                    {% include book_col2.html label=label img=entry.img %}
+                    {% include book_col2.html label=label img=entry.img img_external=entry.img_external %}
                 {% when "2" %}
-                    {% include book_col3.html label=label img=entry.img %}
+                    {% include book_col3.html label=label img=entry.img img_external=entry.img_external %}
                 {% else %}
-                    {% include book_col4.html label=label img=entry.img %}
+                    {% include book_col4.html label=label img=entry.img img_external=entry.img_external %}
                 {% endcase %}
             {% endfor %}
         </div>
