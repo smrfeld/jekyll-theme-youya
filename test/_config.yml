@@ -38,3 +38,6 @@ about_img: profile.jpg
 github_url: https://github.com
 linkedin_url: https://www.linkedin.com
 google_scholar_url: https://scholar.google.com
+
+# Highlighter
+highlighter: rouge
