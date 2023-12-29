@@ -3,7 +3,7 @@
 <head>
 	{% include header_content.html canonical_url=page.canonical_url title=page.title %}
 
-	<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"/>
+	<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/bootstrap-toc.min.css">
 
 	<style>
 		img {
@@ -46,7 +46,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
 
-<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+<script src="{{ site.url }}/assets/js/bootstrap-toc.min.js"></script>
 
 <!-- bloc-content -->
 <div class="bloc l-bloc" id="bloc-content">
