@@ -729,20 +729,24 @@ button {
 /* = Custom Styling
 -------------------------------------------------------------- */
 
+body {
+	font-family: ui-sans-serif, -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 p,
 label,
 .btn,
-a,
 li {
-	font-family: "Lato";
 	font-weight: 300;
-	color: #000000 !important;
+	/* font-weight: 400; */
+	font-size: 1rem;
+	color: #0d0d0d !important;
+	/* font-size: 19px !important; */
 }
 
 a:hover {
-	font-family: "Lato";
 	font-weight: 300;
-	color: #0066DB !important;
+	color: #459cff !important;
 }
 
 h1,
@@ -777,12 +781,10 @@ h6 {
 }
 
 .heading-bold {
-	font-family: "Lato";
 	font-weight: 300;
 }
 
 .heading-reg {
-	font-family: "Lato";
 	font-weight: 400;
 	letter-spacing: 2px;
 	color: #FFFFFF !important;
@@ -824,8 +826,7 @@ h6 {
 }
 
 .p-style {
-	font-family: "Lato";
-	font-weight: 400;
+	font-weight: 500;
 	color: #000000 !important;
 	text-decoration: none;
 }
@@ -837,17 +838,27 @@ h6 {
 }
 
 .youya-p {
-	font-family: "Lato";
-	font-weight: 300;
-	color: rgba(0, 0, 0, 0.70) !important;
+	font-weight: 100;
+	color: #0d0d0d !important;
 	text-decoration: none;
 	text-transform: none;
 }
 
 .youya-p-alt {
 	color: rgba(0, 0, 0, 0.50) !important;
-	font-family: "Lato";
 	font-weight: 300;
+	font-size: 14px;
+}
+
+.youya-p-alt a {
+	color: rgba(0, 0, 0, 0.50) !important;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.youya-p-alt a:hover {
+	color: #459cff !important;
+	font-weight: 400;
 	font-size: 14px;
 }
 
@@ -982,7 +993,6 @@ h6 {
 .youya-p a {
 	text-decoration: none;
 	color: rgba(0, 0, 0, 0.80) !important;
-	font-family: "Lato";
 	font-weight: 300;
 }
 
@@ -998,13 +1008,13 @@ h6 {
 	border-style: _popUpItemAction:;
 	border-color: rgba(0, 0, 0, 0.10) !important;
 	margin-right: 10px;
-	font-family: "Lato";
 	font-weight: 300;
 	padding-right: 10px;
 	padding-left: 10px;
 	margin-top: 7px;
 	margin-bottom: 7px;
 	border-radius: 10px 10px 10px 10px;
+	font-size: 0.8rem;
 }
 
 .h1-underline {
@@ -1031,6 +1041,10 @@ h2 a {
 	text-decoration: none;
 }
 
+a.nav-link {
+	color: #0d0d0d !important;
+}
+
 .label-link a {
 	text-decoration: none;
 }
@@ -1043,21 +1057,20 @@ h2 a {
 }
 
 .youya-p a:hover {
-	font-family: "Lato";
 	font-weight: 300;
-	color: #0066DB !important;
+	color: #459cff !important;
 }
 
 h2 a:hover {
-	font-family: "Lato";
 	font-weight: 300;
-	color: #0066DB !important;
+	color: #459cff !important;
 }
 
 a {
-	font-family: "Lato";
+	font-size: 1rem;
 	font-weight: 300;
-	color: #000000 !important;
+	color: #0066DB !important;
+	text-decoration: none;
 }
 
 .header-text a {
@@ -1068,7 +1081,6 @@ a {
 }
 
 .paragraph-book {
-	font-family: "Lato";
 	font-weight: 300;
 	padding-top: 20px;
 	font-size: 16px;
@@ -1076,15 +1088,15 @@ a {
 }
 
 h5 a {
-	font-family: "Lato";
 	font-weight: 300;
+	font-size: 1.25rem;
 	text-decoration: none;
+	color: #0d0d0d !important;
 }
 
 h5 a:hover {
-	font-family: "Lato";
 	font-weight: 300;
-	color: #0066DB !important;
+	color: #459cff !important;
 }
 
 .icon {
@@ -1121,7 +1133,6 @@ h5 a:hover {
 }
 
 h5 {
-	font-family: "Lato";
 	font-weight: 300;
 }
 
@@ -1157,15 +1168,15 @@ h5 {
 }
 
 .icon-common:hover {
-	color: #0066DB !important;
+	color: #459cff !important;
 }
 
 .header-text a:hover {
-	color: #438DEC !important;
+	color: #459cff !important;
 }
 
 .label-link a:hover {
-	color: #438DEC !important;
+	color: #459cff !important;
 }
 
 .img-full-width {
@@ -1199,18 +1210,20 @@ h5 {
 
 pre.highlight {
 	border: 10px solid white;
-	background: #EBEBEB;
+	background-color: #f9fff9;
+	color: #037d5d;
+	/* background: #EBEBEB; */
 	font-size: 16px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
-	color: #000000 !important;
+	/* color: #000000 !important; */
 }
 
 code.highlighter-rouge {
-	background-color: #EBEBEB;
-	color: #000000 !important;
+	background-color: #f9fff9;
+	color: #037d5d;
 	padding: 3px 3px 3px 3px;
 }
 
@@ -1219,7 +1232,18 @@ h3 a {
 }
 
 h3 a:hover {
-	color: #438DEC !important;
+	color: #459cff !important;
+}
+
+span.math {
+	color: #053c20 !important;
+	/* color: #000000; */
+}
+
+div.MathJax_Display {
+	/* background-color: #f9fff9; */
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .youya-entry-img {
@@ -1494,7 +1518,6 @@ h3 a:hover {
 	.zero-spacing {}
 
 	.youya-p a {
-		font-family: "Lato";
 		font-weight: 300;
 	}
 
@@ -1542,7 +1565,6 @@ h3 a:hover {
 @media (max-width: 575px) {
 	.youya-p {
 		color: #646464 !important;
-		font-family: "Lato";
 		font-weight: 300;
 	}
 
@@ -1551,7 +1573,6 @@ h3 a:hover {
 	}
 
 	.youya-p a {
-		font-family: "Lato";
 		font-weight: 300;
 		color: rgba(0, 0, 0, 0.80) !important;
 	}
@@ -1563,6 +1584,6 @@ h3 a:hover {
 	}
 
 	.youya-nav-list a:hover {
-		color: #438DEC !important;
+		color: #459cff !important;
 	}
 }
