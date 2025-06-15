@@ -1,9 +1,14 @@
 {% include heading.html title=include.title tag=include.tag %}
 
-{% if include.category %}
-    {% assign books = site.data[include.data_src] | where: "category", include.category | sort: "date" | reverse %}
-{% else %}
-    {% assign books = site.data[include.data_src] | sort: "date" | reverse %}
+{% assign books = "" | split: "" %}
+
+{% if site.data[include.data_src] %}
+  {% assign data = site.data[include.data_src] %}
+  {% if include.category %}
+    {% assign books = data | where: "category", include.category | sort: "date" | reverse %}
+  {% else %}
+    {% assign books = data | sort: "date" | reverse %}
+  {% endif %}
 {% endif %}
 
-{% include books_bloc.html books=books %}    
+{% include books_bloc.html books=books %}
