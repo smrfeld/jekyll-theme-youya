@@ -1,7 +1,11 @@
 {% include heading.html title=include.title tag=include.tag %}
 
 {% assign dat = "" | split: "" %}
-{% for data_src in include.data_src %}
+{% assign data_srcs = include.data_src %}
+{% unless data_srcs.size %}
+  {% assign data_srcs = include.data_src | split: ", " %}
+{% endunless %}
+{% for data_src in data_srcs %}
     {% assign dat = dat | concat: site.data[data_src] %}
 {% endfor %}
 
