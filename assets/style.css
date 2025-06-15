@@ -958,7 +958,7 @@ h6 {
 
 .top-fix-2 {
 	position: absolute;
-	background-color: #00FF00;
+	background-color: #FFFFFF;
 	height: 100%;
 	width: 100px;
 	top: 0px;
@@ -981,7 +981,7 @@ h6 {
 	right: 0px;
 	bottom: 0px;
 	position: absolute;
-	background-color: #00FF00;
+	background-color: #FFFFFF;
 }
 
 .fill-div {
@@ -1547,7 +1547,7 @@ div.MathJax_Display {
 
 	.fill-all {
 		bottom: 206px;
-		background-color: #00FF00;
+		background-color: #FFFFFF;
 	}
 
 	.top-fix {
