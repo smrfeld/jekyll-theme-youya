@@ -1,6 +1,6 @@
 {% include heading.html title=include.title tag=include.tag %}
 
-{% assign dat = "" %}
+{% assign dat = "" | split: "" %}
 {% for data_src in include.data_src %}
     {% assign dat = dat | concat: site.data[data_src] %}
 {% endfor %}
