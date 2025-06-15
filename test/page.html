@@ -11,6 +11,6 @@ toc:
 ---
 
 {% assign srcs = "entries, entries" | split: ", " %}
-{% include entries.html title="Entries" tag="entries" data_src="entries" %}
+{% include entries.html title="Entries" tag="entries" data_src=srcs %}
 
 {% include entries_collapsible.html title="Collapsible" tag="collapsible" data_src="collapsible" %}
