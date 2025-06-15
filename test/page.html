@@ -10,7 +10,7 @@ toc:
     tag: entries
 ---
 
-{% assign srcs = "entries, " | split: ", " %}
+{% assign srcs = "entries" | split: ", " %}
 {% include entries.html title="Entries" tag="entries" data_src=srcs %}
 
 {% include entries_collapsible.html title="Collapsible" tag="collapsible" data_src="collapsible" %}
