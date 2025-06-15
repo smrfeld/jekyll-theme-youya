@@ -6,8 +6,10 @@
   {% assign data_srcs = include.data_src | split: ", " %}
 {% endif %}
 {% for data_src in data_srcs %}
-  {{ site.data[data_src] }}
-  {% assign dat = dat | concat: site.data[data_src] | default: "" | values %}
+  {% assign src_data = site.data[data_src] %}
+  {% for item in src_data %}
+    {% assign dat = dat | push: item %}
+  {% endfor %}
 {% endfor %}
 
 {% if include.sort_field %}
