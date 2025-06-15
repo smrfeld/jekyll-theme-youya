@@ -3,7 +3,7 @@ GIT
   revision: a228c2a60bd7bd27d24779b20f3b22cf14f2a00c
   branch: main
   specs:
-    youya (0.3.0)
+    youya (0.4.0)
       jekyll (~> 4.2)
 
 GEM
