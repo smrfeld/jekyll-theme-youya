@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/smrfeld/jekyll-theme-youya
-  revision: a228c2a60bd7bd27d24779b20f3b22cf14f2a00c
+  revision: cf74bfd8310f9ebf41a7c3cb4bb0124432743a70
   branch: main
   specs:
     youya (0.4.0)
