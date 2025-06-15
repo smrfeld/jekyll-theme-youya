@@ -2,7 +2,7 @@
 
 {% assign dat = "" | split: "" %}
 {% assign data_srcs = include.data_src %}
-{% if data_srcs contains ',' or data_srcs is string %}
+{% if data_srcs contains ',' %}
   {% assign data_srcs = include.data_src | split: ", " %}
 {% endif %}
 {% for data_src in data_srcs %}
