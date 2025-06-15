@@ -1,13 +1,11 @@
 ---
-- totoro1:
-  title: My Neighbor Totoro
+- title: My Neighbor Totoro
   description: "My Neighbor Totoro (Japanese: となりのトトロ, Hepburn: Tonari no Totoro) is a 1988 Japanese animated fantasy film written and directed by Hayao Miyazaki and animated by Studio Ghibli for Tokuma Shoten. The film—which stars the voice actors Noriko Hidaka, Chika Sakamoto, and Hitoshi Takagi—tells the story of a professor's two young daughters (Satsuki and Mei) and their interactions with friendly wood spirits in postwar rural Japan."
   tags: Ghibli, Totoro
   url: https://en.wikipedia.org/wiki/My_Neighbor_Totoro
   img: totoro.jpg
   date: "April 16, 1988"
-- totoro2:
-  title: My Neighbor Totoro
+- title: My Neighbor Totoro
   description: "My Neighbor Totoro (Japanese: となりのトトロ, Hepburn: Tonari no Totoro) is a 1988 Japanese animated fantasy film written and directed by Hayao Miyazaki and animated by Studio Ghibli for Tokuma Shoten. The film—which stars the voice actors Noriko Hidaka, Chika Sakamoto, and Hitoshi Takagi—tells the story of a professor's two young daughters (Satsuki and Mei) and their interactions with friendly wood spirits in postwar rural Japan."
   used_in_publication: My Neighbor Totoro
   tags: Ghibli, Totoro
