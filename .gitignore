@@ -5,3 +5,4 @@ _site/
 blocs/
 /blocs
 .jekyll-metadata
+test/*.lock
