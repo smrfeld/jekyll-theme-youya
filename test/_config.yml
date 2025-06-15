@@ -4,7 +4,8 @@ theme: youya
 author: Oliver K. Ernst
 
 # Site url
-url: https://smrfeld.github.io/jekyll-theme-youya
+url: https://www.oliver-ernst.com
+baseurl: "/jekyll-theme-youya"
 
 # Favicon in assets - 32x32 pixels
 favicon: favicon.png
