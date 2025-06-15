@@ -2,11 +2,11 @@
 
 {% assign dat = "" | split: "" %}
 {% assign data_srcs = include.data_src %}
-{% unless data_srcs.size %}
+{% if data_srcs contains ',' or data_srcs is string %}
   {% assign data_srcs = include.data_src | split: ", " %}
-{% endunless %}
+{% endif %}
 {% for data_src in data_srcs %}
-    {% assign dat = dat | concat: site.data[data_src] %}
+  {% assign dat = dat | concat: site.data[data_src] %}
 {% endfor %}
 
 {% if include.sort_field %}
