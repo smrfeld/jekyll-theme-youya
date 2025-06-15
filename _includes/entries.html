@@ -6,6 +6,7 @@
   {% assign data_srcs = include.data_src | split: ", " %}
 {% endif %}
 {% for data_src in data_srcs %}
+  {{ site.data[data_src] }}
   {% assign dat = dat | concat: site.data[data_src] | default: "" | values %}
 {% endfor %}
 
