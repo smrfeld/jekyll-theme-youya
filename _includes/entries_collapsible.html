@@ -1,8 +1,11 @@
 {% include heading.html title=include.title tag=include.tag %}
 
-{% assign dat = "" %}
+{% assign dat = "" | split: "" %}
 {% for data_src in include.data_src %}
-    {% assign dat = dat | concat: site.data[data_src] %}
+  {% assign src_data = site.data[data_src] %}
+  {% for item in src_data %}
+    {% assign dat = dat | push: item %}
+  {% endfor %}
 {% endfor %}
 
 {% if include.sort_field %}
