@@ -94,7 +94,7 @@ Now you can set the following required fields (see also the example `_config.yml
 * Social links.
 * Easily customizable.
 
-## Tests
+## Dev: tests
 
 Install theme in the main directory:
 ```
@@ -108,6 +108,10 @@ bundle exec jekyll serve
 ```
 
 On every change to the template, you must `rm Gemfile.lock` and re-run `bundle install`.
+
+## Dev: releasing
+
+Run `bundle lock --add-platform x86_64-linux` for GitHub actions.
 
 ## Customization
 
