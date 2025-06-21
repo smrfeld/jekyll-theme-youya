@@ -103,8 +103,11 @@ bundle install
 Then build the site from the `test` directory:
 ```
 cd test
+bundle install
 bundle exec jekyll serve
 ```
+
+On every change to the template, you must `rm Gemfile.lock` and re-run `bundle install`.
 
 ## Customization
 

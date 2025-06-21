@@ -1,2 +1,3 @@
 source "https://rubygems.org"
-gem "youya", git: "https://github.com/smrfeld/jekyll-theme-youya", branch: "main"
+# gem "youya", git: "https://github.com/smrfeld/jekyll-theme-youya", branch: "main"
+gem "youya", path: "../"

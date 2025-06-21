@@ -29,3 +29,15 @@ Castle in the `Sky` (Japanese: 天空の城ラピュタ, Hepburn: Tenkū no Shir
     * Castle in the `Sky` (Japanese: 天空の城ラピュタ, Hepburn: Tenkū no Shiro Rapyuta)
 * Castle in the `Sky` (Japanese: 天空の城ラピュタ, Hepburn: Tenkū no Shiro Rapyuta)
 * Castle in the `Sky` (Japanese: 天空の城ラピュタ, Hepburn: Tenkū no Shiro Rapyuta)
+
+## Here are some equation
+
+The forward diffusion process is defined as:
+
+$$q(x_t | x_0) = N(x_t; \sqrt{\bar{\alpha_t}} x_0, (1 - \bar{\alpha_t}) \cdot I)$$
+
+The loss looks ends up looking like this:
+
+$$L(\theta) = \sum_{t=1}^T L_t(\theta)$$
+
+with nice inline math formatting for the probability $$q(x_t \mid x_0)$$ as well.

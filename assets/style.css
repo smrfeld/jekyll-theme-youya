@@ -1240,12 +1240,12 @@ h3 a:hover {
 	color: #459cff !important;
 }
 
-span.math {
+span.katex-html {
 	color: #053c20 !important;
 	/* color: #000000; */
 }
 
-div.MathJax_Display {
+span.katex-display {
 	/* background-color: #f9fff9; */
 	padding-top: 10px;
 	padding-bottom: 10px;
