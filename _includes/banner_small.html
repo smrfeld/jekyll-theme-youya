@@ -3,7 +3,10 @@
 	<div class="container bloc-sm-lg bloc-sm-md bloc-sm-sm bloc-sm">
 		<div class="row">
 			<div class="col text-center text-md-start text-sm-center">
-				<a href="{{ site.url }}/index.html"><img src="{{ site.url }}/assets/img/lazyload-ph.png" data-src="{{ site.url }}/assets/img/{{ site.logo_white }}" class="img-fluid img-protected float-lg-none img-banner lazyload" alt="logo" /></a>
+				<a href="{{ '/index.html' | relative_url }}"><img
+						src="{{ '/assets/img/lazyload-ph.png' | relative_url }}"
+						data-src="{{ '/assets/img/' | relative_url }}{{ site.logo_white }}"
+						class="img-fluid img-protected float-lg-none img-banner lazyload" alt="logo" /></a>
 			</div>
 		</div>
 	</div>

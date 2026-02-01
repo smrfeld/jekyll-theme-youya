@@ -3,8 +3,10 @@
 	<div class="container bloc-no-padding-lg bloc-no-padding-md bloc-no-padding-sm bloc-no-padding">
 		<div class="row">
 			<div class="col text-center text-md-start">
-				<a class="navbar-brand mx-auto" href="{{ site.url }}/index.html">
-					<img src="{{ site.url }}/assets/img/lazyload-ph.png" data-src="{{ site.url }}/assets/img/{{ site.logo_black }}" class="img-fluid img-protected mx-auto d-block img-namelblbla-style lazyload" alt="logo" />
+				<a class="navbar-brand mx-auto" href="{{ '/index.html' | relative_url }}">
+					<img src="{{ '/assets/img/lazyload-ph.png' | relative_url }}"
+						data-src="{{ '/assets/img/' | relative_url }}{{ site.logo_black }}"
+						class="img-fluid img-protected mx-auto d-block img-namelblbla-style lazyload" alt="logo" />
 				</a>
 			</div>
 		</div>

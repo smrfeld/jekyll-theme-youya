@@ -6,3 +6,4 @@ blocs/
 /blocs
 .jekyll-metadata
 test/*.lock
+.vscode

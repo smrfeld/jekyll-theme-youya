@@ -1,7 +1,10 @@
 {% if include.img %}
-<img src="{{ site.url }}/assets/img/lazyload-ph.png" data-src="{{ site.url }}/assets/img/{{ include.img }}" class="img-fluid img-protected mx-auto d-block lazyload img-book" style="max-height: 300px;" alt="img" />
+<img src="{{ '/assets/img/lazyload-ph.png' | relative_url }}"
+    data-src="{{ '/assets/img/' | relative_url }}{{ include.img }}"
+    class="img-fluid img-protected mx-auto d-block lazyload img-book" style="max-height: 300px;" alt="img" />
 {% else %}
-<img src="{{ site.url }}/assets/img/lazyload-ph.png" data-src="{{ include.img_external }}" class="img-fluid img-protected mx-auto d-block lazyload img-book" style="max-height: 300px;" alt="img" />
+<img src="{{ '/assets/img/lazyload-ph.png' | relative_url }}" data-src="{{ include.img_external }}"
+    class="img-fluid img-protected mx-auto d-block lazyload img-book" style="max-height: 300px;" alt="img" />
 {% endif %}
 <p class="float-none text-center paragraph-book">
     {{ include.label }}

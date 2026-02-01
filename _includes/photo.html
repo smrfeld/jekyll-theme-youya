@@ -1,23 +1,28 @@
 <!-- bloc-photo -->
 <div class="bloc bloc-fill-screen l-bloc" id="bloc-photo">
-	<div class="container">
-		<div class="row">
-			<div class="text-center text-md-start col-lg-8 offset-lg-2">
+    <div class="container">
+        <div class="row">
+            <div class="text-center text-md-start col-lg-8 offset-lg-2">
                 {% if include.img %}
-                    <img src="{{ site.url }}/assets/img/lazyload-ph.png" data-src="{{ site.url }}/assets/img/{{ include.img }}" class="img-fluid img-protected mx-auto d-block lazyload" alt="photo" style="max-height:500px;height:auto;width:auto" />
+                <img src="{{ '/assets/img/lazyload-ph.png' | relative_url }}"
+                    data-src="{{ '/assets/img/' | relative_url }}{{ include.img }}"
+                    class="img-fluid img-protected mx-auto d-block lazyload" alt="photo"
+                    style="max-height:500px;height:auto;width:auto" />
                 {% else %}
-                    <img src="{{ site.url }}/assets/img/lazyload-ph.png" data-src="{{ include.url }}" class="img-fluid img-protected mx-auto d-block lazyload" alt="photo" style="max-height:500px;height:auto;width:auto" />
+                <img src="{{ '/assets/img/lazyload-ph.png' | relative_url }}" data-src="{{ include.url }}"
+                    class="img-fluid img-protected mx-auto d-block lazyload" alt="photo"
+                    style="max-height:500px;height:auto;width:auto" />
                 {% endif %}
                 {% if include.description || include.location %}
-				<p class="mg-lg text-lg-center">
+                <p class="mg-lg text-lg-center">
                     {% if include.location %}
-                        {{ include.location }} - 
+                    {{ include.location }} -
                     {% endif %}
                     {{ include.description }}
-				</p>
+                </p>
                 {% endif %}
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- bloc-photo END -->

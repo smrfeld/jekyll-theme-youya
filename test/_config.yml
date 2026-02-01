@@ -5,6 +5,8 @@ author: Oliver K. Ernst
 
 # Site url
 url: https://smrfeld.github.io/jekyll-theme-youya
+# Baseurl (for GitHub Pages project sites)
+baseurl: ""
 
 # Favicon in assets - 32x32 pixels
 favicon: favicon.png

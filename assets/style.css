@@ -113,6 +113,9 @@ a:hover {
 	flex-grow: 1;
 	display: flex;
 	flex-wrap: wrap;
+	min-height: 100vh;
+	height: 100%;
+	position: relative;
 }
 
 .bloc-fill-screen>.container>.row {
@@ -925,6 +928,7 @@ h6 {
 	bottom: 206px;
 	position: absolute;
 	background-color: #FF0000;
+	height: calc(100% - 206px);
 }
 
 .top-img {
@@ -973,6 +977,8 @@ h6 {
 	right: 0px;
 	bottom: 0px;
 	background-color: #0000FF;
+	height: 100%;
+	position: relative;
 }
 
 .fill-column {
@@ -982,12 +988,14 @@ h6 {
 	bottom: 0px;
 	position: absolute;
 	background-color: #FFFFFF;
+	height: 100%;
 }
 
 .fill-div {
 	height: 100%;
 	width: 100%;
 	background-size: cover;
+	display: block;
 }
 
 .youya-p a {

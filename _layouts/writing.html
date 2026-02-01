@@ -1,113 +1,126 @@
 <!doctype html>
 <html>
+
 <head>
 	{% include header_content.html canonical_url=page.canonical_url title=page.title %}
 
-	<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/bootstrap-toc.min.css">
-	<link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css">
+	<link rel="stylesheet" type="text/css" href="{{ '/assets/css/bootstrap-toc.min.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"
+		integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
 
-    <!-- The loading of KaTeX is deferred to speed up page rendering -->
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+	<!-- The loading of KaTeX is deferred to speed up page rendering -->
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"
+		integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6"
+		crossorigin="anonymous"></script>
 
-    <!-- To automatically render math in text elements, include the auto-render extension: -->
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
+	<!-- To automatically render math in text elements, include the auto-render extension: -->
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"
+		integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+		onload="renderMathInElement(document.body);"></script>
 
 	<style>
 		img {
-			max-height:650px !important;
-			height:auto !important;
-			width:auto !important;
+			max-height: 650px !important;
+			height: auto !important;
+			width: auto !important;
 			margin-top: 50px !important;
 			margin-bottom: 50px !important;
 		}
-		img + em {
+
+		img+em {
 			font-style: normal;
 			font-size: 16px;
 			font-weight: 400;
 			font-size: 16px;
 			font-weight: 400;
 			display: block;
-			margin-top:10px;
-			margin-bottom:25px;
-			text-align:center;
-			color:rgba(0,0,0,.5);
+			margin-top: 10px;
+			margin-bottom: 25px;
+			text-align: center;
+			color: rgba(0, 0, 0, .5);
 		}
-	</style> 
+	</style>
 </head>
+
 <body>
 
-<!-- Preloader -->
-<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
-<!-- Preloader END -->
+	<!-- Preloader -->
+	<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
+	<!-- Preloader END -->
 
-<!-- Main container -->
-<div class="page-container">
+	<!-- Main container -->
+	<div class="page-container">
 
-<!-- Banner -->
-{% include banner_small.html %}
+		<!-- Banner -->
+		{% include banner_small.html %}
 
-<!-- Menu bar -->
-{% include menu_bar.html %}
+		<!-- Menu bar -->
+		{% include menu_bar.html %}
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
 
-<script src="{{ site.url }}/assets/js/bootstrap-toc.min.js"></script>
+		<script src="{{ '/assets/js/bootstrap-toc.min.js' | relative_url }}"></script>
 
-<!-- bloc-content -->
-<div class="bloc l-bloc" id="bloc-content">
-	<div class="container bloc-sm-lg bloc-sm-md bloc-sm-sm bloc-sm">
-		<div class="row">
-			<div class="text-md-start offset-lg-2 text-sm-start text-start offset-sm-1 col-sm-10 content-col col-lg-8" data-target="#toc">
-				<!-- Content -->
-				{{ content }}
-			</div>
-			<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center text-md-start offset-lg-0 col-lg-2 d-lg-block   d-none">
-				<div id="toc-wrapper" class="pl-0 pr-4 mb-5">
-					<!-- <div class="panel-heading pl-3 pt-2 mb-2">Contents</div> -->
-					<h4 style="padding-left: 10px;">Contents</h4>
-					<nav id="toc" data-toggle="toc"></nav>
-				  </div>				  
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-content END -->
-
-<!-- bloc-medium -->
-<div class="bloc l-bloc" id="bloc-medium">
-	<div class="container bloc-no-padding-lg bloc-no-padding-md bloc-no-padding-sm bloc-no-padding">
-		<div class="row">
-			<div class="col">
-				<div class="divider-h">
+		<!-- bloc-content -->
+		<div class="bloc l-bloc" id="bloc-content">
+			<div class="container bloc-sm-lg bloc-sm-md bloc-sm-sm bloc-sm">
+				<div class="row">
+					<div class="text-md-start offset-lg-2 text-sm-start text-start offset-sm-1 col-sm-10 content-col col-lg-8"
+						data-target="#toc">
+						<!-- Content -->
+						{{ content }}
+					</div>
+					<div
+						class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-center text-md-start offset-lg-0 col-lg-2 d-lg-block   d-none">
+						<div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+							<!-- <div class="panel-heading pl-3 pt-2 mb-2">Contents</div> -->
+							<h4 style="padding-left: 10px;">Contents</h4>
+							<nav id="toc" data-toggle="toc"></nav>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="text-md-start col-lg-8 offset-lg-2 offset-md-1 col-md-10 text-sm-start col-sm-10 offset-sm-1 text-center text-lg-start">
-				<p class="youya-p">
-					{{ site.author }}<br>{{ page.date }}<br>
-				</p>
-				{% if page.medium_url %}
-				<p class="mg-md youya-p">
-					<a href="{{ page.medium_url }}"><span class="fab fa-medium icon-padded icon-padded-right icon-sm"></span></a><a class="youya-p" href="{{ page.medium_url }}">Read this on Medium</a><br>
-				</p>
-				{% endif %}
+		<!-- bloc-content END -->
+
+		<!-- bloc-medium -->
+		<div class="bloc l-bloc" id="bloc-medium">
+			<div class="container bloc-no-padding-lg bloc-no-padding-md bloc-no-padding-sm bloc-no-padding">
+				<div class="row">
+					<div class="col">
+						<div class="divider-h">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div
+						class="text-md-start col-lg-8 offset-lg-2 offset-md-1 col-md-10 text-sm-start col-sm-10 offset-sm-1 text-center text-lg-start">
+						<p class="youya-p">
+							{{ site.author }}<br>{{ page.date }}<br>
+						</p>
+						{% if page.medium_url %}
+						<p class="mg-md youya-p">
+							<a href="{{ page.medium_url }}"><span
+									class="fab fa-medium icon-padded icon-padded-right icon-sm"></span></a><a
+								class="youya-p" href="{{ page.medium_url }}">Read this on Medium</a><br>
+						</p>
+						{% endif %}
+					</div>
+				</div>
 			</div>
 		</div>
+		<!-- bloc-medium END -->
+
+		<!-- Scroll and footer -->
+		{% include scroll_button_and_footer.html %}
+
 	</div>
-</div>
-<!-- bloc-medium END -->
+	<!-- Main container END -->
 
-<!-- Scroll and footer -->
-{% include scroll_button_and_footer.html %}
-
-</div>
-<!-- Main container END -->
-    
-{% include js_footer.html is_home=false %}
+	{% include js_footer.html is_home=false %}
 
 </body>
+
 </html>

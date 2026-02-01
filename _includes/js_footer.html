@@ -1,20 +1,40 @@
 <!-- Additional JS -->
-<script src="{{ site.url }}/assets/js/bootstrap.bundle.min.js?5191"></script>
-<script src="{{ site.url }}/assets/js/blocs.min.js?6152"></script>
-<script src="{{ site.url }}/assets/js/lazysizes.min.js" defer></script>
+<script src="{{ '/assets/js/bootstrap.bundle.min.js?5191' | relative_url }}"></script>
+<script src="{{ '/assets/js/blocs.min.js?6152' | relative_url }}"></script>
+<script src="{{ '/assets/js/lazysizes.min.js' | relative_url }}" defer></script>
 
 <script type="text/javascript">
-	var total_images = {{ site.no_background_images }};
-	var random_number = Math.floor((Math.random()*total_images));
-	var number_str = String(random_number).padStart(4, '0');
-	var img_name = "{{ site.url }}/assets/img/{{ site.background_img_folder }}/" + number_str + ".jpeg";
+	function getRandomBackgroundImagePath() {
+		var total = parseInt("{{ site.no_background_images | default: 1 }}", 10);
+		if (!total || total < 1) {
+			console.warn("no_background_images is missing or invalid; defaulting to 1");
+			total = 1;
+		}
+		var randomNumber = Math.floor((Math.random() * total));
+		var numberStr = String(randomNumber).padStart(4, '0');
+		var imgBase = "{{ '/assets/img/' | relative_url }}";
+		var imgFolder = "{{ site.background_img_folder | default: 'background_imgs' }}";
+		return imgBase + imgFolder + "/" + numberStr + ".jpeg";
+	}
+
 	{% if include.is_home %}
-	console.log(img_name);
-	document.getElementById("bkgrnd-img").src = img_name;
+	var imgName = getRandomBackgroundImagePath();
+	console.log(imgName);
+	var bkgrndImg = document.getElementById("bkgrnd-img");
+	if (bkgrndImg) {
+		bkgrndImg.src = imgName;
+	} else {
+		console.warn("bkgrnd-img element not found; background image not set");
+	}
 	{% else %}
-	var img = "url(" + img_name + ")";
+	var img = "url(" + getRandomBackgroundImagePath() + ")";
 	console.log(img);
-	document.getElementById("bloc-banner").style["background-image"] = img;
+	var banner = document.getElementById("bloc-banner");
+	if (banner) {
+		banner.style["background-image"] = img;
+	} else {
+		console.warn("bloc-banner element not found; background image not set");
+	}
 	{% endif %}
 </script>
 <!-- Additional JS END -->
